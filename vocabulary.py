@@ -1,7 +1,8 @@
-import random
-import os
+# -*- coding:utf-8 -*-
 
-dict = {
+
+
+words_dict = {
     'brisk': 'adj.兴隆的，繁忙活跃的；轻快的',
     'brief': 'adj.简短的，简洁的；短时间的，短暂的',
     'browse': 'v.浏览；吃草，放牧； n.浏览；嫩草，嫩叶',
@@ -131,12 +132,3 @@ dict = {
     'likewise': 'adv.同样地，照样地；又，也',
     'selfish': 'adj.自私的，利己的'
 }
-
-while True:
-    for keys in dict.keys():
-        key_list = random.sample(dict.keys(), 1)
-        key = key_list[0]
-        print(key, "\t", dict[key])
-        print('='*50)
-        os.system('pause')
-
